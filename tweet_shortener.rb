@@ -25,3 +25,15 @@ tweet_str.split.each do |word|
 end
 shortened.join(" ")
 end
+
+
+def bulk_tweet_shortener(tweet_arr)
+  tweet_arr.each do |tweet|
+    puts word_substituter(tweet)
+  end
+end
+
+
+
+
+
