@@ -9,14 +9,24 @@ def dictionary
   "be" => "b",
   "you" => "u",
   "at" => "@",
-  "and" => "&"
+  "and" => "&",
+  "Hello" => "Hi",
+  "To" => "2",
+  "Too" => "2",
+  "Two" => "2",
+  "For" => "4",
+  "Four" => "4",
+  "Be" => "B",
+  "You" => "U",
+  "At" => "@",
+  "And" => "&"
 }
 end
 
 def word_substituter(tweet_str)
 shortened = []
 words = dictionary.keys
-tweet_str.downcase.split.each do |word|
+tweet_str.split.each do |word|
   if(words.include?(word))
     shortened.push(dictionary[word])
   else
