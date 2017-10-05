@@ -23,5 +23,5 @@ tweet_str.split.each do |word|
     shortened.push(word)
   end
 end
-shortened.to_s
+shortened.join(" ")
 end
