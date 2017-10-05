@@ -50,5 +50,3 @@ def selective_tweet_shortener(long_tweet)
     long_tweet
   end
 end
-
-
